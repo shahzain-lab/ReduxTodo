@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
 ///compoents
-import {TodoItems, TodoInput} from './components/index'
+import { TodoInput} from './components/index'
+import { TodoLists } from './components/TodoLists';
 
 function App() {
   return (
-    <div>
+    <div className="App m-5">
       <TodoInput />
-    <h3>Todo List</h3>
-    <TodoItems />
-    <br />
-    <TodoItems />
-     <br /> 
-    <TodoItems />
+      <hr />
+      <TodoLists />
     </div>
   );
 }
