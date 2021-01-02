@@ -7,8 +7,8 @@ export const TodoItems = () => {
          <div className="col">
          <h3>Title</h3>
          </div>
-         <button className="btn btn-success m-2"> Edit</button>
-         <button className="btn btn-dark m-2">Delete</button>
+         <button className="btn btn-success px-3"> Edit</button>
+         <button className="btn btn-danger m-2">Delete</button>
         </div>
     )
 }
