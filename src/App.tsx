@@ -5,7 +5,7 @@ import {TodoItems, TodoInput} from './components/index'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <TodoInput />
     <h3>Todo List</h3>
     <TodoItems />
