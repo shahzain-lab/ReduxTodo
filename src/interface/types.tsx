@@ -1,5 +1,5 @@
 export interface ActionTypes{
-    id: number
-    name: string
-    type: any
+    id?: number
+    name?: string
+    type?: any
 }
