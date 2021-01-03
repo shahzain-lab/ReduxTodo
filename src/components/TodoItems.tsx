@@ -10,8 +10,8 @@ export const TodoItems = ({todo}:any) => {
          <div className="col">
          <h3>{todo.name}</h3>
          </div>
-         <button className="btn btn-success px-3" onClick={() => dispatch(deleteTodo(todo.id))}> Edit</button>
-         <button className="btn btn-danger m-2">Delete</button>
+         <button className="btn btn-success px-3" > Edit</button>
+         <button className="btn btn-danger m-2"onClick={() => dispatch(deleteTodo(todo.id))}>Delete</button>
         </div>
     )
 }

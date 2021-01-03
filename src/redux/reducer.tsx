@@ -9,10 +9,12 @@ export const Reducer =(state:any = todos,action:any) => {
        case ADD_TODO:
            break;
            case DELETE_TODO:
-               break;
+               let newTodo = [...state];
+               newTodo = newTodo.filter((todo:any) => todo.id != action.payload) 
+               return newTodo;
                case UPDATE_TODO:
                    break;
-                   default:
-                       return state
+                       
    }
+   return state
 }
