@@ -5,9 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 ///boootstrap
 import 'bootstrap/dist/css/bootstrap.css';
+///store
 import { Provider } from 'react-redux';
 import store from './redux/store';
-///store
 
 
 ReactDOM.render(

@@ -1,13 +1,16 @@
 import React from 'react'
+import {useDispatch} from 'react-redux';
+import { deleteTodo } from '../redux/Action';
 
-export const TodoItems = () => {
+export const TodoItems = ({todo}:any) => {
+    const dispatch = useDispatch();
     return (
         <div className="row mx-3 align-items-center">
-         <h3>#1</h3>
+         <h3>{todo.id}</h3>
          <div className="col">
-         <h3>Title</h3>
+         <h3>{todo.name}</h3>
          </div>
-         <button className="btn btn-success px-3"> Edit</button>
+         <button className="btn btn-success px-3" onClick={() => dispatch(deleteTodo(todo.id))}> Edit</button>
          <button className="btn btn-danger m-2">Delete</button>
         </div>
     )
