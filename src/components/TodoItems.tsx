@@ -1,12 +1,12 @@
 import React from 'react'
 import {useDispatch} from 'react-redux';
-import { deleteTodo } from '../redux/Action';
+import { deleteTodo, addTodo } from '../redux/Action';
 
 export const TodoItems = ({todo}:any) => {
     const dispatch = useDispatch();
     return (
         <div className="row mx-3 align-items-center">
-         <h3>{todo.id}</h3>
+         <h3>{todo.id.length > 1 ? todo.id[2] : todo.id}</h3>
          <div className="col">
          <h3>{todo.name}</h3>
          </div>

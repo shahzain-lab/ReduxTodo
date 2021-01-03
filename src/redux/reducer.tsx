@@ -5,11 +5,14 @@ import { todos } from './State';
 
 
 export const Reducer =(state:any = todos,action:any) => {
-   switch(action.type){
+   let newTodo;
+    switch(action.type){
        case ADD_TODO:
-           break;
+           newTodo = [...state]
+           newTodo.push(action.payload)
+           return newTodo
            case DELETE_TODO:
-               let newTodo = [...state];
+                newTodo = [...state];
                newTodo = newTodo.filter((todo:any) => todo.id != action.payload) 
                return newTodo;
                case UPDATE_TODO:
